@@ -101,10 +101,12 @@ namespace NumberClassification_API.Controllers
             //Response.Headers[HeaderNames.ContentType] = "application/json";
             
             if( Regex.IsMatch(id, "[a-zA-Z]")){
-                return BadRequest(new Response{
+                var res = BadRequest( new Response{
                     number = "alphabet",
                     error = true
                 });
+                 return new JsonResult(res) { StatusCode = StatusCodes.Status200OK, ContentType = "application/json"};
+
             }
             else{
                 var number = int.Parse(id);
