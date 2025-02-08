@@ -11,3 +11,5 @@ namespace NumberClassification_API.Models
         public bool error {get; set;}
     }
 }
+
+//"launchUrl": "swagger",

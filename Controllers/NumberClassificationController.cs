@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
 using Microsoft.VisualBasic;
 using NumberClassification_API.Models;
 
@@ -93,6 +94,8 @@ namespace NumberClassification_API.Controllers
         [HttpGet("{id}")]
         public IActionResult GetSingle(string id)
         {
+            Response.Headers[HeaderNames.ContentType] = "application/json";
+            
             if( Regex.IsMatch(id, "[a-zA-Z]")){
                 return BadRequest(new Response{
                     number = "alphabet",
