@@ -21,7 +21,10 @@ namespace NumberClassification_API.Controllers
                 Is_prime = Is_prime(number),
                 Is_perfect = Is_perfect(number),
                 Digit_sum = DigitSum(number),
-                Properties = GetProperties(number, new List<string> {"armstrong", "odd"}),
+                Properties = new string[]{
+                    is_armstrong(number)? "armstrong" : null,
+                    number % 2 == 0 ? "even" : "odd"
+                }.Where(prop => prop != null).ToArray(),
                 Fun_fact= FunFact(number)
                 
 
@@ -70,12 +73,13 @@ namespace NumberClassification_API.Controllers
             return sum;
         }
 
-        private List<string> GetProperties(int number, List<string> properties){
-            var result = new List<string>();
-            if (properties.Contains("armstrong") && is_armstrong(number)) result.Add("armstrong");
-            if (properties.Contains("odd") && number % 2 != 0) result.Add("odd");
-            return result;
-        }
+        // private List<string> GetProperties(int number, List<string> properties){
+        //     var result = new List<string>();
+        //     if (properties.Contains("armstrong") && is_armstrong(number)) result.Add("armstrong");
+        //     // if (properties.Contains("odd") && number % 2 != 0) result.Add("odd");
+        //     var odd = number % 2 == 0 ? "Odd" : "Even";
+        //     return result;
+        // }
 
         private string FunFact(int number){
             if (is_armstrong(number)){

@@ -10,7 +10,7 @@ namespace NumberClassification_API.Models
         public int Number {get; set;}
         public bool Is_prime {get; set;}
         public bool Is_perfect {get; set;}
-        public List<string>? Properties {get; set;}
+        public string[]? Properties {get; set;}
         public int Digit_sum {get; set;}
         public string? Fun_fact {get; set;}
     }
