@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\onovu\\source\\repos\\NumberClassificationAPI\\NumberClassificationAPI.csproj": {}
+    "/Users/isaaconovuakpo/Documents/dev-apps/NumberClassificationAPI/NumberClassification_API/NumberClassificationAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\onovu\\source\\repos\\NumberClassificationAPI\\NumberClassificationAPI.csproj": {
+    "/Users/isaaconovuakpo/Documents/dev-apps/NumberClassificationAPI/NumberClassification_API/NumberClassificationAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\onovu\\source\\repos\\NumberClassificationAPI\\NumberClassificationAPI.csproj",
+        "projectUniqueName": "/Users/isaaconovuakpo/Documents/dev-apps/NumberClassificationAPI/NumberClassification_API/NumberClassificationAPI.csproj",
         "projectName": "NumberClassificationAPI",
-        "projectPath": "C:\\Users\\onovu\\source\\repos\\NumberClassificationAPI\\NumberClassificationAPI.csproj",
-        "packagesPath": "C:\\Users\\onovu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\onovu\\source\\repos\\NumberClassificationAPI\\obj\\",
+        "projectPath": "/Users/isaaconovuakpo/Documents/dev-apps/NumberClassificationAPI/NumberClassification_API/NumberClassificationAPI.csproj",
+        "packagesPath": "/Users/isaaconovuakpo/.nuget/packages/",
+        "outputPath": "/Users/isaaconovuakpo/Documents/dev-apps/NumberClassificationAPI/NumberClassification_API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\onovu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/isaaconovuakpo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -39,11 +37,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -69,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
