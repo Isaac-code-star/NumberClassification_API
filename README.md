@@ -8,7 +8,7 @@ A simple .NET Web API that classifies a number based on multiple mathematical pr
 	•	Prime Number
 	•	Perfect Number
 	•	Armstrong Number
-	•	Odd or Even
+	•	Fun Fact
 	•	Sum of Digits
 	•	Custom Properties (e.g., “armstrong”, “odd”)
 
@@ -34,7 +34,7 @@ dotnet restore
 
 dotnet run
 
-By default, the API runs on http://localhost:5000 or https://localhost:5001.
+By default, the API runs on https://localhost:5279.
 
 🛠 API Endpoints
 
@@ -42,22 +42,21 @@ By default, the API runs on http://localhost:5000 or https://localhost:5001.
 
 Request
 
-GET /api/NumberClassification/classify/{number}
+GET /api/classify-number/{number}
 
 Example:
 
-curl -X GET http://localhost:5000/api/NumberClassification/classify/153
+curl -X GET http://localhost:5000/api/classify-number/371
 
 Response
 
 {
-  "number": 153,
+  "number": 371,
   "isPrime": false,
   "isPerfect": false,
-  "isArmstrong": true,
-  "isOdd": true,
-  "sumOfDigits": 9,
-  "properties": ["armstrong", "odd"]
+  "sumOfDigits": 11,
+  "properties": ["armstrong", "odd"],
+  "fun fact": "371 is an armstrong number because 3^3 + 7^3 + 1^3 = 371"
 }
 
 ❌ Handling Invalid Input
