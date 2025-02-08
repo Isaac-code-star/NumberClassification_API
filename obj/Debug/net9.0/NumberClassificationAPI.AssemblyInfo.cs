@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NumberClassificationAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fa40a62b8f3053ff6dfd7ee348f0b64d2eac908")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65ed4e3b9189b192f74ac9d3aba2c1f41e769244")]
 [assembly: System.Reflection.AssemblyProductAttribute("NumberClassificationAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NumberClassificationAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

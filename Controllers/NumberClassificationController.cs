@@ -98,7 +98,7 @@ namespace NumberClassification_API.Controllers
         [HttpGet("{id}")]
         public IActionResult GetSingle(string id)
         {
-            Response.Headers[HeaderNames.ContentType] = "application/json";
+            //Response.Headers[HeaderNames.ContentType] = "application/json";
             
             if( Regex.IsMatch(id, "[a-zA-Z]")){
                 return BadRequest(new Response{
@@ -109,7 +109,7 @@ namespace NumberClassification_API.Controllers
             else{
                 var number = int.Parse(id);
                 var result = GetNumberClassification(number);
-                return Ok(result);
+                return new JsonResult(result) { StatusCode = StatusCodes.Status200OK, ContentType = "application/json"};
             }            
             
         }
