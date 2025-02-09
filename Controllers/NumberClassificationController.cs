@@ -105,7 +105,7 @@ namespace NumberClassification_API.Controllers
                     number = "alphabet",
                     error = true
                 });
-                 return new JsonResult(res) { StatusCode = StatusCodes.Status200OK, ContentType = "application/json"};
+                 return new JsonResult(res) { StatusCode = StatusCodes.Status400BadRequest, ContentType = "application/json"};
 
             }
             else{
